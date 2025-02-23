@@ -49,7 +49,7 @@ async function authenticate_user(username, password) {
   return flag;
 }
 function create_access_token(username) {
-  const token = jwt.sign({ username }, process.env.JWT_SECRET, { expiresIn: "1d" })
+  const token = jwt.sign({ username }, process.env.JWT_SECRET, { expiresIn: "30d" })
   return token;
 }
 

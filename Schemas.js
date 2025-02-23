@@ -33,7 +33,6 @@ const MenuItemsSchema=new mongoose.Schema({
     name:{
         type:String,
         required:true,
-        maxLength:25
     },
     price:{
         type:Number,

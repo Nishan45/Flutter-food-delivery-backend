@@ -43,7 +43,9 @@ const send=async()=>{
   }
 }
 
-       await axios.get(`http://localhost:3000/auth`,config).then(res=>{
+       await axios.post(`http://localhost:3000/signup`,{
+        username:"1234567890",password:"Password2025@",name:"Tester"
+       }).then(res=>{
             console.log(res.data);
             })
         /*await axios.post(`http://localhost:3000/login`,{
